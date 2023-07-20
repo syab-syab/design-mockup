@@ -1,0 +1,61 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デザインプロトタイプ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="App">
+    <header class="header">円CONVERSION</header>
+    <span>輸入品の価格を円換算</span>
+    <main class="main">
+      <div class="select-section">
+        <label for="code-select">↓↓↓通貨コードを選んでください↓↓↓</label>
+        <br>
+        <select name="code" id="code-select" class="code-select">
+          <option value="">USD(アメリカ)</option>
+          <option value="">EUR(ヨーロッパ)</option>
+          <option value="">GBP(イギリス)</option>
+          <option value="">CHF(スイス)</option>
+          <option value="">AUD(オーストラリア)</option>
+          <option value="">NZD(ニュージーランド)</option>
+          <option value="">NOK(ノルウェー)</option>
+          <option value="">CAD(カナダ)</option>
+          <option value="">INR(インド)</option>
+          <option value="">IDR(インドネシア)</option>
+          <option value="">MYR(マレーシア)</option>
+          <option value="">SGD(シンガポール)</option>
+          <option value="">HKD(香港)</option>
+          <option value="">PHP(フィリピン)</option>
+          <option value="">THB(タイ)</option>
+          <option value="">KRW(韓国)</option>
+          <option value="">CNY(中国)</option>
+        </select>
+      </div>
+
+      <div class="rate">
+        <!-- <p>USD / JPY : 144.272 円</p> -->
+        <p>JPY / USD : 0.0069313302 $</p>
+        <span class="red">この値はあくまで仮置きです。</span>
+      </div>
+      <div class="change-price-beta">
+        <label>日本円での値段を入力してください。: </label>
+        <input type="number">
+        <br>↓↓↓<br>
+        <p>この商品は米ドルで<span class="changed-price-beta">0ドル</span>です！</p>
+        <p>昨日と比べて<span class="changed-price-beta">0ドル</span>お得です！</p>
+        <p>先週と比べて<span class="changed-price-beta">0ドル</span>損です！</p>
+        <p>先月と比べて<span class="changed-price-beta">トントン</span>です！</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <span class="red">*このサイトの為替レートはforex-pythonを用いて計算しています。</span>
+      <br>
+      <span class="red">*正確性は保証いたしかねます。あくまで娯楽としてお楽しみください。</span>
+      <br>
+      <span class="copyright">©円Conversion</span>
+    </footer>
+  </div>
+</body>
+</html>

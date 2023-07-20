@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 基幹部分 */
+
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  /* font-weight: lighter; */
+  color: wheat;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: url(./img/imagePic\ \(2\).jpg) no-repeat;
+  background-size: cover;
+  background-color: rgba(18, 124, 147, 0.8);
+  background-blend-mode: multiply;
+  /* background: rgb(0, 0, 0); */
+  text-align: center;
+  font-size: 10rem;
+}
+
+/* header */
+
+.header {
+  /* background: rgb(6, 40, 65); */
+  padding: 5rem 0 5rem 0;
+  font-size: 150%;
+  font-weight: lighter;
+}
+
+/* main */
+
+.main {
+  padding: 3rem 0 5rem;
+  /* 一時的な背景色 */
+  /* background: rgb(6, 40, 65); */
+  /* border-top: 1rem solid red; */
+  font-size: 5rem;
+}
+
+/* select */
+
+
+.code-select, .code-select > option {
+  color: black;
+}
+
+/* select end */
+
+/* rate */
+
+.rate {
+  font-size: 5rem;
+  /* border: solid 1px white; */
+  /* background: rgb(41, 59, 72); */
+}
+
+/* rate end */
+
+/* change-price */
+
+.change-price-beta {
+  font-size: 3rem;
+}
+
+.change-price-beta > input {
+  color: black;
+}
+
+/* change-price end */
+
+/* changed-price-beta */
+/* ややこしいからクラス名を変えること */
+
+.changed-price-beta {
+  font-size: 3rem;
+}
+
+/* changed-price-beta end */
+
+/* main end */
+
+
+/* footer */
+
+.footer {
+  /* background: black; */
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+.copy {
+  font-size: 1rem;
+}
+
+/* footer End */
