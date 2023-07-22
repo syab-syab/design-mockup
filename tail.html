@@ -7,68 +7,273 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <div class="text-center">
-    <header class="bg-blue-400 p-4 mb-20">
-      <nav class="flex container items-center justify-between mx-auto">
-        <div>
-          <h1 class="text-3xl">YEN CONVERSION</h1>
-          <p>買い物のお供に</p>
-          <p>輸入品の価格を円換算</p>
-        </div>
-        <div class="space-x-12 font-bold">
-          <a href="#" class="hover:text-green-200 transition-all duration-300">home</a>
-          <a href="#" class="hover:text-green-200 transition-all duration-300">about</a>
-          <a href="#" class="hover:text-green-200 transition-all duration-300">help</a>
-        </div>
-      </nav>
+  <div class="
+    App
+    text-center
+    
+    border
+    border-black
+    border-dashed
+    bg-orange-100
+  ">
+  <!-- ヘッダー -->
+    <header class="
+      bg-blue-400
+      pt-24
+      pb-2
+    ">
+    <!-- ヘッダー・タイトル -->
+    <div class="
+      mb-24
+    ">
+      <h1 class="
+        text-7xl
+        tracking-widest
+        mb-2
+      ">
+        YEN$CONVERSION
+      </h1>
+      <h3 class="
+        text-3xl
+        mb-2
+      ">
+        輸入品の価格を円換算
+      </h3>
+
+    </div>
+    <!-- ヘッダー・メニュー -->
+    <div class="
+      font-bold
+      space-x-12
+      text-3xl
+    ">
+      <a href="#" class="
+        border-b-2
+        border-transparent
+        hover:border-white       
+        transition-all
+        duration-500
+      ">
+        ABOUT
+      </a>
+      <a href="#" class="
+        border-b-2
+        border-transparent
+        hover:border-white       
+        transition-all
+        duration-500
+      ">
+        TWITTER
+      </a>
+      <a href="#" class="
+        border-b-2
+        border-transparent
+        hover:border-white       
+        transition-all
+        duration-500
+      ">
+        YOUTUBE
+      </a>
+    </div>
     </header>
 
-    <main class="main container mx-auto text-2xl py-20">
-        <div class="select-section my-2">
-          <label for="code-select" class="my-2">↓↓↓通貨コードを選んでください↓↓↓</label>
-          <br>
-          <select name="code" id="code-select" class="border border-black my-4">
-            <option value="">USD(アメリカ)</option>
-            <option value="">EUR(ヨーロッパ)</option>
-            <option value="">GBP(イギリス)</option>
-            <option value="">CHF(スイス)</option>
-            <option value="">AUD(オーストラリア)</option>
-            <option value="">NZD(ニュージーランド)</option>
-            <option value="">NOK(ノルウェー)</option>
-            <option value="">CAD(カナダ)</option>
-            <option value="">INR(インド)</option>
-            <option value="">IDR(インドネシア)</option>
-            <option value="">MYR(マレーシア)</option>
-            <option value="">SGD(シンガポール)</option>
-            <option value="">HKD(香港)</option>
-            <option value="">PHP(フィリピン)</option>
-            <option value="">THB(タイ)</option>
-            <option value="">KRW(韓国)</option>
-            <option value="">CNY(中国)</option>
-          </select>
+    <!-- メインコンテンツ -->
+    <main class="
+      bg-emerald-200
+      container
+      mx-auto
+      text-2xl
+      py-20
+
+    ">
+    <!-- メイン・通貨コード選択 -->
+      <div class="
+        select-section
+        mb-3
+        text-3xl
+        font-bold
+
+        border-b
+        border-black
+        border-dashed
+      ">
+        <label for="code-select" class="
+          my-2
+        ">
+          通貨コードを選んでください
+        </label>
+        <br>
+        <select name="code" id="code-select" class="
+          border
+          border-black
+          my-4
+        ">
+          <option value="">USD(アメリカ)</option>
+          <option value="">EUR(ヨーロッパ)</option>
+          <option value="">GBP(イギリス)</option>
+          <option value="">CHF(スイス)</option>
+          <option value="">AUD(オーストラリア)</option>
+          <option value="">NZD(ニュージーランド)</option>
+          <option value="">NOK(ノルウェー)</option>
+          <option value="">CAD(カナダ)</option>
+          <option value="">INR(インド)</option>
+          <option value="">IDR(インドネシア)</option>
+          <option value="">MYR(マレーシア)</option>
+          <option value="">SGD(シンガポール)</option>
+          <option value="">HKD(香港)</option>
+          <option value="">PHP(フィリピン)</option>
+          <option value="">THB(タイ)</option>
+          <option value="">KRW(韓国)</option>
+          <option value="">CNY(中国)</option>
+        </select>
+      </div>
+
+      <!-- メイン・現在のレート -->
+      <div class="
+        rate
+        mb-4
+        py-3
+
+        border-b
+        border-black
+        border-dashed
+
+      ">
+        <!-- <p>USD / JPY : 144.272 円</p> -->
+        <p class="
+          text-3xl
+          font-bold
+          mb-2
+        ">
+        <!-- USDの部分は選択された通貨コードに変えること -->
+          JPY / USD : 0.0069313302 $
+      </p>
+        <span class="
+          text-xl
+          text-red-600
+        ">
+          *この値はあくまで仮置きです。
+        </span>
+      </div>
+
+      <!-- メイン・JPY/**換算 -->
+      <div class="
+        change-price-beta
+        border-b
+        border-black
+        border-dashed
+      ">
+        <div class="
+          mb-2
+        ">
+          <label for="price-value" class="
+            text-3xl
+            font-bold
+          ">
+          日本円での値段を入力してください。: </label>
+          <input type="number" id="price-value" class="
+            border
+            border-black
+          ">          
         </div>
 
-        <div class="rate">
-          <!-- <p>USD / JPY : 144.272 円</p> -->
-          <p>JPY / USD : 0.0069313302 $</p>
-          <span class="red">この値はあくまで仮置きです。</span>
+        <p class="
+          text-3xl
+          font-bold
+          mb-2
+        ">
+        <!-- 矢印がなんかダサいから変える -->
+          ↓↓↓
+        <p>
+        <!-- メイン・JPY/**換算(結果) -->
+        <div class="
+          flex
+          justify-center
+          pb-2
+          text-3xl
+          font-bold
+        ">
+          <ul class="
+          bg-gray-200
+          tracking-widest
+          ">
+            <li class="
+              text-left
+            ">
+              この商品は米ドルで
+              <span class="
+                changed-price-beta
+                text-4xl
+              ">
+                0ドル
+              </span>
+              です！
+            </li>
+            <li class="
+              text-left
+            ">
+              昨日と比べて
+              <span class="
+                changed-price-beta
+                text-4xl
+              ">
+                0ドル
+              </span>
+              <span class="
+                text-blue-600
+              ">
+                お得
+              </span>
+              です！
+            </li>
+            <li class="
+            text-left
+
+            ">
+              先週と比べて
+              <span class="
+                changed-price-beta
+                text-4xl
+              ">
+                0ドル
+              </span>
+              <span class="
+                text-red-600
+              ">
+                損
+              </span>
+              です！
+            </li>
+            <li class="
+            text-left
+            ">
+              先月と比べて
+              <span class="
+                changed-price-beta
+                text-blue-600
+              ">
+                トントン
+              </span>
+              です！
+            </li>
+          </ul>
+          
         </div>
-        <div class="change-price-beta">
-          <label>日本円での値段を入力してください。: </label>
-          <input type="number" class="border border-black">
-          <br>↓↓↓<br>
-          <p>この商品は米ドルで<span class="changed-price-beta">0ドル</span>です！</p>
-          <p>昨日と比べて<span class="changed-price-beta">0ドル</span>お得です！</p>
-          <p>先週と比べて<span class="changed-price-beta">0ドル</span>損です！</p>
-          <p>先月と比べて<span class="changed-price-beta">トントン</span>です！</p>
-        </div>        
+      </div>        
     </main>
-    <footer class="footer">
+
+    <!-- フッター -->
+    <footer class="
+      bg-black
+      text-white
+    ">
+      <!-- フッター・注意書き -->
       <span class="red">*このサイトの為替レートはforex-pythonを用いて計算しています。</span>
       <br>
       <span class="red">*正確性は保証いたしかねます。あくまで娯楽としてお楽しみください。</span>
       <br>
-      <span class="copyright">©円Conversion</span>
+      <!-- フッター・コピーライト -->
+      <span class="copyright">©YEN$CONVERSION</span>
     </footer>
   </div>
 </body>
